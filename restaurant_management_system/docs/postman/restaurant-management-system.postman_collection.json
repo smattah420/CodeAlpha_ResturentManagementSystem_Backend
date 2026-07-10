@@ -1,0 +1,67 @@
+{
+  "info": {
+    "name": "Restaurant Management System API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Status Check",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/status/"
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"manager\",\n  \"password\": \"securepassword123\"\n}"
+        },
+        "url": "{{base_url}}/api/auth/login/"
+      }
+    },
+    {
+      "name": "List Tables",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/tables/"
+      }
+    },
+    {
+      "name": "Create Table",
+      "request": {
+        "method": "POST",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"table_number\": 12,\n  \"capacity\": 4,\n  \"status\": \"Available\"\n}"
+        },
+        "url": "{{base_url}}/api/tables/"
+      }
+    },
+    {
+      "name": "Daily Sales Report",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/reports/daily-sales/?date=2026-07-09"
+      }
+    },
+    {
+      "name": "Low Stock Report",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/api/reports/low-stock/"
+      }
+    }
+  ],
+  "variable": [
+    {"key": "base_url", "value": "http://127.0.0.1:8000"}
+  ]
+}

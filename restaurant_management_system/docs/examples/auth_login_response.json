@@ -1,0 +1,9 @@
+{
+  "detail": "Login successful.",
+  "user": {
+    "id": 1,
+    "username": "manager",
+    "email": ""
+  },
+  "token": "8f0c2c3989d2d8760e5eb865f4de9d6d6d6b6e9a"
+}

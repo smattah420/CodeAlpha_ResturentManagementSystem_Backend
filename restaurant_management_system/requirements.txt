@@ -1,0 +1,9 @@
+# Django REST Framework backend dependencies
+# django: The web framework itself
+Django>=5.0,<6.0
+
+# dygangorestframework: Toolkit for building Web APIs in Django
+djangorestframework>=3.15,<3.16
+
+# django-cors-headers: Middleware to handle Cross-Origin Resource Sharing (CORS)
+django-cors-headers>=4.3,<5.0
