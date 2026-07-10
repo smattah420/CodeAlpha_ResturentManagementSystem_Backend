@@ -90,7 +90,4 @@ The project includes automated tests for:
 - Postman collection: [docs/postman/restaurant-management-system.postman_collection.json](docs/postman/restaurant-management-system.postman_collection.json)
 - Sample payloads: [docs/examples/](docs/examples/)
 
-## Internship-Ready Notes
-- The code follows Django best practices with clear app separation and reusable helpers.
-- The project is tested and documented for demonstration and review.
-- The admin interface and API endpoints are ready for extension with a frontend or deployment pipeline.
+
